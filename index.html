@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis XV Breanna</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> <!-- Incluye el framework Bootstrap para estilos y layouts -->
+    
+    <!-- FANCYAPPS - https://fancyapps.com/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"> <!-- Librería FancyApps para galerías modales (popup) -->
+    
+    <!-- AOS ANIMATE - https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Librería AOS para animaciones al hacer scroll -->
+
+    <!-- LINK LOCALES -->
+     
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <!--CONTADOR-->
+    <script>
+  const cuentaAtras = () => {
+    const fechaBoda = new Date("April 03, 2027 00:00:00").getTime();
+    const ahora = new Date().getTime();
+    const diferencia = fechaBoda - ahora;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    document.getElementById("dias").innerText = dias;
+    document.getElementById("horas").innerText = horas;
+    document.getElementById("minutos").innerText = minutos;
+    document.getElementById("segundos").innerText = segundos;
+  };
+
+  setInterval(cuentaAtras, 1000);
+</script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- Texto superior -->
+  <div class="hero-top">
+    <p>UNA NOCHE PARA RECORDAR</p>
+  </div>
+
+  <!-- Título principal -->
+  <div class="hero-title">
+
+    <span class="mis">mis</span>
+
+    <span class="xv">XV</span>
+
+    <span class="nombre">Breanna</span>
+
+  </div>
+
+</section>
+
+
+
+<!--HISTORIA-->
+<section id="historia" class="section-padding">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
+         <p>Con mucha ilusión queremos compartir contigo este momento tan especial.</p>
+        <p>Con amor: [Nombre de mamá] & [Nombre de papá] tenemos el honor de celebrar los XV años de nuestra hija</p>
+        <h2>Breanna</h2>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+        <img src="img/historia.JPG" alt="img-historia" id="historia-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--CONTADOR-->
+<section class="contador">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <h2>03 de abril del 2027</h2>
+
+    <div class="reloj">
+      <div><span id="dias">0</span><p>DÍAS</p></div>
+      <div><span id="horas">0</span><p>HORAS</p></div>
+      <div><span id="minutos">0</span><p>MINUTOS</p></div>
+      <div><span id="segundos">0</span><p>SEGUNDOS</p></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria section-padding">
+  <div class="container">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <div class="row">
+      <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+        <div class="section-title">
+          <h2>Momentos de Breanna</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+        <div class="ig-item image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria01.JPG" alt="">
+          </div>
+        </div>
+        <div class="ig-item image-zoom mt-4">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria04.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+        <div class="ig-item image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria02.JPG" alt="">
+          </div>
+        </div>
+        <div class="ig-item image-zoom mt-4">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria05.JPG" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+        <div class="ig-item image-zoom">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria06.JPG" alt="">
+          </div>
+        </div>
+        <div class="ig-item image-zoom mt-4">
+          <div class="image-zoom-wrapper">
+            <img src="img/galeria03.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!--EVENTO-->
+<section class="evento">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <h2>Detalles del evento</h2>
+
+    <div class="fila-eventos">
+      <!-- BLOQUE IGLESIA -->
+      <div class="bloque-evento">
+        <img src="svg/iglesia.svg" alt="Iglesia" class="icono-evento">
+        <h2 class="fecha">Ceremonia</h2>
+        <p class="lugar">Rectoría de la Santa Cruz</p>
+        <p class="hora"> 5:30 PM</p>
+        <a href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwig-bOr-5GUAxUAAAAAHQAAAAAQDA..i&client=safari&pvq=CgsvZy8xdHJjNTdkMSIgChpwYXJyb3F1aWEgcGVycGV0dW8gc29jb3JybxACGAM&lqi=ChpwYXJyb3F1aWEgcGVycGV0dW8gc29jb3Jyb0iBu8r15oCAgAhaKBAAEAEQAhgAGAEYAiIacGFycm9xdWlhIHBlcnBldHVvIHNvY29ycm-SAQ9jYXRob2xpY19jaHVyY2g&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=mx&sa=X&ftid=0x80d7700e25354979:0x804ed00efa88ec3b" target="_blank" class="boton-mapa">Google Maps</a>
+      </div>
+
+      <!-- BLOQUE SALÓN -->
+      <div class="bloque-evento">
+        <img src="svg/salon.svg" alt="Salón" class="icono-evento">
+        <h2 class="fecha">Recepción</h2>
+        <p class="lugar">Salón La Villa</p>
+        <p class="hora">8:00 PM</p>
+        <a href="https://www.google.com/maps/place/campestre+mexicali/data=!4m2!3m1!1s0x80d7773f784c4f69:0x66c6bf0661663e68?sa=X&ved=1t:242&ictx=111" target="_blank" class="boton-mapa">Google Maps</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!--PROGRAMA-->
+<section class="programa">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+    <h2>Programa</h2>
+
+    <div class="bloques-programa">
+      <div class="bloque">
+        <img src="svg/misa.svg" alt="Ceremonia" class="icono">
+        <div class="texto">
+          <p class="hora">5:30 PM</p>
+          <p>Ceremonia Religiosa</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="svg/recepcion.svg" alt="Recepción" class="icono">
+        <div class="texto">
+          <p class="hora">8:00 PM</p>
+          <p>Recepción</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="svg/cena.svg" alt="Cena" class="icono">
+        <div class="texto">
+          <p class="hora">8:30 PM</p>
+          <p>Cena</p>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <img src="svg/fin.svg" alt="Fin del evento" class="icono">
+        <div class="texto">
+          <p class="hora">2:00 AM</p>
+          <p>Fin del evento</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- CONSULTA DEL PASE -->
+<section class="consulta">
+  <div class="contenido">
+    <div data-aos="fade-down" data-aos-delay="150">
+
+      <h2>Consulta tu pase</h2>
+
+      <p class="texto">
+        Escribe tu nombre tal como aparece en la invitación:
+      </p>
+
+      <input
+        list="nombres"
+        id="nombreInput"
+        placeholder="Nombre/Familia"
+        autocomplete="off"
+        oninput="mostrarPases()"
+      >
+
+      <datalist id="nombres"></datalist>
+
+      <div
+        class="resultado"
+        id="resultadoPases"
+      ></div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONFIRMACIÓN DE ASISTENCIA -->
+<section class="confirmar-asistencia">
+
+  <h2>Confirmar Asistencia</h2>
+
+  <p>
+    ¿Nos podrás acompañar en este día tan especial?
+  </p>
+
+  <div class="opciones-asistencia">
+
+    <button
+      type="button"
+      class="btn-asistencia"
+      data-respuesta="Sí asistiré"
+      onclick="seleccionarAsistencia(this)"
+    >
+      SÍ ASISTIRÉ
+    </button>
+
+    <button
+      type="button"
+      class="btn-asistencia"
+      data-respuesta="No podré asistir"
+      onclick="seleccionarAsistencia(this)"
+    >
+      NO PODRÉ ASISTIR
+    </button>
+  </div>
+  
+<p class="fecha-confirmacion">
+    Favor de confirmar su asistencia antes del <strong>7 de septiembre de 2026.</strong>
+</p>
+
+  <p>
+    ¿Quieres dejarnos un mensaje u observación sobre tu asistencia?
+  </p>
+
+  <textarea
+    id="mensajeAsistencia"
+    maxlength="500"
+    placeholder="Escríbenos aquí..."
+  ></textarea>
+
+  <button
+    type="button"
+    id="botonEnviarAsistencia"
+    onclick="enviarConfirmacion()"
+  >
+    ENVIAR
+  </button>
+
+  <p id="estadoEnvio"></p>
+
+</section>
+
+
+<!-- FORMULARIO OCULTO PARA GOOGLE SHEETS -->
+<form
+  id="formularioGoogle"
+  method="POST"
+  target="respuestaGoogle"
+  style="display: none;"
+>
+  <input
+    type="hidden"
+    name="familia"
+    id="googleFamilia"
+  >
+
+  <input
+    type="hidden"
+    name="pases"
+    id="googlePases"
+  >
+
+  <input
+    type="hidden"
+    name="asistencia"
+    id="googleAsistencia"
+  >
+
+  <input
+    type="hidden"
+    name="mensaje"
+    id="googleMensaje"
+  >
+</form>
+
+<iframe
+  name="respuestaGoogle"
+  id="respuestaGoogle"
+  style="display: none;"
+></iframe>
+
+<script>
+  /*
+   * Pega aquí la URL que copiaste de Apps Script.
+   * Debe terminar en /exec
+   */
+  const URL_APPS_SCRIPT =
+    "https://script.google.com/macros/s/AKfycbwIO1UBy7bAocZomb-ouaIZmlDbJb0ow9E65wrk05CZmI9U10UkP4sbIhm8oZLeSDRwBg/exec";
+
+  /*
+   * Lista de invitados y recepciones.
+   * Aquí debe estar la lista completa que preparamos.
+   */
+  const listaPases = {
+"Fam. Carbajal Castro": 5,
+"Fam. Dávila Pérez": 2,
+"Fam. Pérez Montoya": 2,
+"Fam. Murrieta Pablos": 4,
+"Fam. Murrieta Valdez": 2,
+"Fam. Miranda Murrieta": 5,
+"Fam. Cantú Murrieta": 2,
+"Fam. Ceballos Montoya": 3,
+"Fam. Erives Montoya": 2,
+"Ana Erives y Omar Celaya": 2,
+"Fam. Valenzuela Erives": 5,
+"Fam. Ceballos Valenzuela": 4,
+"Fam. Alemán Félix": 2,
+"Fam. Erives Argüelles": 3,
+"Fam. Gutiérrez Alemán": 4,
+"Fam. Bejarano Alemán": 3,
+"Fam. Bejarano Mendoza": 2,
+"Fam. Córdova": 2,
+"Fam. Pablos Aguilar": 2,
+"Georgina Amador": 1,
+"Fam. Hernández Villalba": 4,
+"Óscar Alvarez": 1,
+"Israel Borquez": 2,
+"Mariana Bustos": null,
+"Elizabeth Moreno": 2,
+"Jorge Belloso": 2,
+"Ana Laura Robles": 1,
+"Juan Reynaga": 1,
+"Rodrigo Jiménez": 1,
+"Ramses Ortiz y Cinthya Iturbero": 2,
+"Sergio Ocampo": 2,
+"José Luis Cervantes": 1,
+"Héctor Lizárraga": 2,
+"Carlos López": 2,
+"José Velázquez": 2,
+"Mayra Guerrero y Juan Pablo Guiza": 2,
+"Kevin y novia": null,
+"Fernando y novia": null,
+"Fam. Alvarez Matus": 3,
+"Fam. Alvarez Quintero": 7,
+"Fam. López Ortega Alvarez": 6,
+"Gloria del Carmen Alvarez Valdez": 1,
+"Fam. Matus Medina": 4,
+"Fam. Jaime Matus": 2,
+"Fam. Matus Ruiz": 5,
+"Isabel Matus Arellano": 1,
+"Fam. Ruelas Martínez": 2,
+"Manuel G. Ruelas y Andrea Alcázar": 2,
+"Jorge A. Ruelas y M. Eugenia Guevara": 2,
+"Fam. Ruelas Torres": 2,
+"Fam. Cons de León": 2,
+"Fam. Contreras Flores": 2,
+"Fam. Mirón Jabalera": 2,
+"Fam. García de Alba Pérez": 2,
+"Fam. González Castañeda": 2,
+"Fam. Pelayo Santiago": 2,
+"Familia Magdaleno Pérez": 2,
+"Fam. Salas Riestra": 2,
+"Fam. Huerta Linares": 2,
+"Fam. Monroy Bengoechea": 2,
+"Familia Jiménez Niebla": 2,
+"Familia López Pellón": 2,
+"Pbro. Rubén Magallanes": 1,
+"Familia Ruelas Castro": 2,
+"Juanita Arellano González": 2,
+"Familia Ruiz Arellano": 2,
+"Irán Martínez": 1,
+"Sr. Jonathan Lee y familia": 2,
+"Fam. Barrera Lee": 2,
+"Fam. Martínez Campos": 2,
+"Paola Niebla": 1,
+"Fam. Hernández Robles": 5,
+"Berenice Ruiz Arellano": 1,
+"Esther Ruiz Arellano": 1,
+"Anabel Ruiz Arellano": 1,
+"Fam. Lucero Robles": 2,
+"Fam. Ruiz Silenciario": 2,
+"Raúl Aranda Valdez": 1,
+"Fam. Villegas Aranda": 2,
+"Fam. Alvarez Borquez": 2,
+"Fam. Alvarez Villarelo": 2,
+"Fam. Alvarez Cataño": 2,
+"Fam. Ibarra Velazco": 3,
+"Pbro. Efraín Ochoa": 1,
+"Pbro. Marco A. Encinas": 1,
+"Paulina Llorente Cabrera": 1,
+"Natalia Piña": 1,
+"Lucía Márquez Phelts": 1,
+"Pbro. Arnoldo Rascón": 1,
+"Pbro. Horacio León": 1,
+"José Guillermo Jiménez": 1,
+"Pbro. Mario Alberto Castellón": 1,
+"Beatriz Oviedo": 2,
+"Martha M. y Ana Karla V.": 2,
+"Irma Olivas": 1,
+"Alma Ruelas y Enrique": 2,
+"Ivonne Jaik Dipp": 1,
+"María Paula Lacarra": 1,
+"Norma Prince": 2,
+"Liza Mariel e Israel": 2,
+"María Fernanda Ramírez Medina": 1,
+"Adrián Ochoa": 1,
+"Analicia Molina y novio": 2,
+"Miguel Ángel Cárdenas León": 2,
+"Ivanna Mendieta y acompañante": 2,
+"Paola Cintora y Alfonso Vizcarra": 2,
+"Mariana Laureny López Pellón": 1,
+"Fam. Arellano Villegas": 2,
+"Fam. Nava Arellano": 2,
+"Fam. Ríos Arellano": 2,
+"Fam. Villanueva Arellano": 2,
+"Sr. Roberto Robles T.": 1,
+"Fam. Amaro Arellano": 2,
+"Israel Correa y esposa": 2,
+"Elizabeth Tanori Aguilera y esposo": 2,
+"Ramón Hernández": 2,
+"Tanya Paola Arellano Haro": 1,
+"Delia Padilla": 1,
+"Tere Quintero": 1,
+"Lourdes Vega Kuri": 2,
+"Lupita Aranda": 1,
+"Sra. Martha Arellano": 1,
+"Irma Alicia Alvarez": 1,
+"Asís Sáenz y Pamela Tapia": 2,
+"Claudia Renée Peña": 1,
+"Fam. Tafoya Orozco": 4,
+"Melissa Acosta Araiza": 1,
+"Pbro. Juan Méndez": 1,
+"Pbro. Luis Manuel": 1,
+"Salvador Placencia": 1,
+"Pbro. Héctor Díaz Colio": 1,
+"Alejandra Covantes y Ricardo Ibarra": 2,
+"Jonathan Hernández y Alexia Gastélum": 2,
+"Félix Zamora": 1,
+"Mariana Ruiz": 1,
+"Mariella Espinoza": 1,
+"Fam. Pérez Jiménez": 2,
+"Jalay Olachea": 1,
+"Pbro. Esteban Sandoval": 1,
+"Erick Madrigal": 2,
+"Marie y Antonio": 2,
+"Fam. Solís Machado": 2,
+"Deniss Alvarez y esposo": 2,
+"Rosa Linda Arellano G.": 2
+  };
+
+  let familiaSeleccionada = "";
+  let pasesSeleccionados = 0;
+  let asistenciaSeleccionada = "";
+  let formularioEnviado = false;
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    cargarListaInvitados
+  );
+
+  function cargarListaInvitados() {
+    const datalist = document.getElementById("nombres");
+
+    if (!datalist) {
+      console.error(
+        'No se encontró el elemento con id="nombres".'
+      );
+      return;
+    }
+
+    datalist.innerHTML = "";
+
+    Object.keys(listaPases).forEach(function(nombre) {
+      const opcion = document.createElement("option");
+      opcion.value = nombre;
+      datalist.appendChild(opcion);
+    });
+
+    const formulario =
+      document.getElementById("formularioGoogle");
+
+    formulario.action = URL_APPS_SCRIPT;
+  }
+
+  function mostrarPases() {
+    const campoNombre =
+      document.getElementById("nombreInput");
+
+    const resultado =
+      document.getElementById("resultadoPases");
+
+    const nombreEscrito = campoNombre.value.trim();
+
+    const nombreCorrecto =
+      encontrarNombreRegistrado(nombreEscrito);
+
+    if (!nombreCorrecto) {
+      familiaSeleccionada = "";
+      pasesSeleccionados = 0;
+      resultado.textContent = "";
+      resultado.classList.remove("visible");
+      return;
+    }
+
+    const cantidad = listaPases[nombreCorrecto];
+
+    familiaSeleccionada = nombreCorrecto;
+    pasesSeleccionados = cantidad || 0;
+
+    if (
+      cantidad === null ||
+      cantidad === undefined ||
+      cantidad === ""
+    ) {
+      resultado.textContent =
+        "Tu nombre está registrado, pero la cantidad de pases está pendiente.";
+
+      resultado.classList.add("visible");
+      return;
+    }
+
+    const palabra =
+      cantidad === 1
+        ? "pase asignado"
+        : "pases asignados";
+
+    resultado.textContent =
+      `¡Hola ${nombreCorrecto}! Tienes ${cantidad} ${palabra}.`;
+
+    resultado.classList.add("visible");
+  }
+
+  function encontrarNombreRegistrado(nombreEscrito) {
+    const nombreNormalizado =
+      normalizarTexto(nombreEscrito);
+
+    return Object.keys(listaPases).find(function(nombre) {
+      return normalizarTexto(nombre) === nombreNormalizado;
+    }) || "";
+  }
+
+  function normalizarTexto(texto) {
+    return String(texto || "")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, " ");
+  }
+
+  function seleccionarAsistencia(boton) {
+    asistenciaSeleccionada =
+      boton.dataset.respuesta;
+
+    document
+      .querySelectorAll(".btn-asistencia")
+      .forEach(function(elemento) {
+        elemento.classList.remove("seleccionado");
+      });
+
+    boton.classList.add("seleccionado");
+
+    const estado =
+      document.getElementById("estadoEnvio");
+
+    estado.textContent = "";
+  }
+
+
+  function enviarConfirmacion() {
+    const estado =
+      document.getElementById("estadoEnvio");
+
+    const botonEnviar =
+      document.getElementById(
+        "botonEnviarAsistencia"
+      );
+
+    const mensaje =
+      document.getElementById(
+        "mensajeAsistencia"
+      ).value.trim();
+
+    /*
+     * Volvemos a revisar el campo por si la persona
+     * escribió el nombre sin seleccionar la sugerencia.
+     */
+    mostrarPases();
+
+    if (!familiaSeleccionada) {
+      estado.textContent =
+        "Primero escribe y selecciona tu nombre o familia.";
+
+      estado.className = "estado-envio error";
+      return;
+    }
+
+    if (
+      listaPases[familiaSeleccionada] === null ||
+      listaPases[familiaSeleccionada] === undefined
+    ) {
+      estado.textContent =
+        "La cantidad de pases de esta invitación todavía está pendiente.";
+
+      estado.className = "estado-envio error";
+      return;
+    }
+
+    if (!asistenciaSeleccionada) {
+      estado.textContent =
+        "Selecciona si podrás asistir.";
+
+      estado.className = "estado-envio error";
+      return;
+    }
+
+    if (mensaje.length > 500) {
+      estado.textContent =
+        "El mensaje no puede superar los 500 caracteres.";
+
+      estado.className = "estado-envio error";
+      return;
+    }
+
+    if (
+      !URL_APPS_SCRIPT ||
+      URL_APPS_SCRIPT.includes("PEGA_AQUI")
+    ) {
+      estado.textContent =
+        "Falta colocar la URL de Apps Script.";
+
+      estado.className = "estado-envio error";
+      return;
+    }
+
+    document.getElementById(
+      "googleFamilia"
+    ).value = familiaSeleccionada;
+
+    document.getElementById(
+      "googlePases"
+    ).value = pasesSeleccionados;
+
+    document.getElementById(
+      "googleAsistencia"
+    ).value = asistenciaSeleccionada;
+
+    document.getElementById(
+      "googleMensaje"
+    ).value = mensaje;
+
+    formularioEnviado = true;
+    botonEnviar.disabled = true;
+
+    estado.textContent =
+      "Enviando confirmación...";
+
+    estado.className = "estado-envio";
+
+    document
+      .getElementById("formularioGoogle")
+      .submit();
+
+    /*
+     * El iframe oculto termina de cargar
+     * después de que Apps Script procesa el envío.
+     */
+    setTimeout(function() {
+      estado.textContent =
+        "¡Gracias! Tu confirmación fue registrada.";
+
+      estado.className = "estado-envio exito";
+
+      botonEnviar.textContent = "Confirmación enviada";
+
+      document
+        .querySelectorAll(".btn-asistencia")
+        .forEach(function(elemento) {
+          elemento.disabled = true;
+        });
+
+      document.getElementById(
+        "mensajeAsistencia"
+      ).disabled = true;
+
+    }, 1800);
+  }
+</script>
+
+<!--CIERRE-->
+<section class="cierre" style="background-image: url('img/cierre.JPG');">
+  <div class="overlay" style="background-color: rgba(0,0,0,0.3); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column;">
+    <h2>Breanna</h2>
+    <p>03.04.27</p>
+  </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <audio id="musicaFondo" loop preload="auto">
+      <source src="audio/nuestra-cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const musica = document.getElementById("musicaFondo");
+        musica.volume = 0.6;
+
+        const reproducirMusica = () => {
+          musica.play().catch(() => {
+            console.log("Esperando interacción para reproducir.");
+          });
+        };
+
+        reproducirMusica();
+
+        document.addEventListener("click", reproducirMusica, { once: true });
+        document.addEventListener("touchstart", reproducirMusica, { once: true });
+      });
+    </script>
+  </body>
+</html>
