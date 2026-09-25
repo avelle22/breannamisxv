@@ -1000,9 +1000,7 @@ img {
    14. RESPONSIVE - CELULAR
 ========================================================== */
 
-@media (max-width: 480px) {
-
-  /* ---------- GENERAL ---------- */
+/* ---------- GENERAL ---------- */
 
   :root {
     --titulo: 55px;
@@ -1016,7 +1014,10 @@ img {
     min-height: 600px;
 
     background-image: url('../img/hero.JPG');
-    background-position: 54% center;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .hero-top {
