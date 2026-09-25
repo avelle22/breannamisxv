@@ -961,7 +961,7 @@ img {
 }
 
 .cierre h2 {
-  margin-top: 200px;
+  margin-top: 150px;
   color: var(--blanco);
   font-size: 65px;
   line-height: 1.2;
@@ -973,7 +973,7 @@ img {
   display: block;
 
   color: var(--blanco);
-  margin-top: -20px;
+  margin-top: -5px;
   font-size: 18px;
 }
 
